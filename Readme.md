@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Ольга Филатова](https://up.htmlacademy.ru/adaptive/26/user/2088117).
-* Наставник: `Руслан Бреев`.
+* Наставник: [Руслан Бреев] (https://htmlacademy.ru/profile/blckwltz)
 
 ---
 
