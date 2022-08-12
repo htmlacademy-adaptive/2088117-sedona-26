@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page__body">
+  <!--Шапка-->
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img src="/img/logo_sedona.svg" width="185" height="96" alt="Логотип Седоны">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a>Главная</a>
+        </li>
+        <li class="site-list__item site-list__item--current">
+          <a href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Форма отзыва</a>
+        </li>
+        <li class="site-list__item">
+          <a href="https://htmlacademy.ru">html Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!--Основное содержание-->
+  <main class="main-container">
+    <h1 class="visually hidden">Фото и видео</h1>
+    <header class="welcome">
+      <img src="/img/catalog/sedona.svg" width="229" height="39" alt="Седона">
+    </header>
+    <section class="about-catalog">
+      <h2 class="about-catalog__title">Фото и видео</h2>
+      <p class="about-catalog__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть
+        о
+        политике и экономике.</p>
+    </section>
+    <section class="fotoalbum">
+      <h2 class="visually hidden">Фотоальбом</h2>
+      <ul class="fotoalbum__lsit">
+        <li class="fotoalbum__item">
+          <img src="/img/catalog/landscape-mobile.jpg" width="280" height="280" alt="Неродные просторы">
+          <h3 class="fotoalbum__title">Неродные просторы</h3>
+          <p class="fotoalbum__author">Автор фото: Борис</p>
+          <button class="fotoalbum__button button" type="button">
+            <span class="visually hidden">Лайк</span>
+          </button>
+          <p class="fotoalbum__number">1350</p>
+        </li>
+        <li class="fotoalbum__item">
+          <img src="/img/catalog/flora-mobile.jpg" width="280" height="280" alt="Местная растительность">
+          <h3 class="fotoalbum__title">Местная растительность</h3>
+          <p class="fotoalbum__author">Автор фото: Сергей</p>
+          <button class="fotoalbum__button button" type="button">
+            <span class="visually hidden">Лайк</span>
+          </button>
+          <p class="fotoalbum__number">143</p>
+        </li>
+        <li class="fotoalbum__item">
+          <img src="/img/catalog/road-mobile.jpg" width="280" height="280" alt="Дорога на север">
+          <h3 class="fotoalbum__title">Дорога на север</h3>
+          <p class="fotoalbum__author">Автор фото: Петр</p>
+          <button class="fotoalbum__button button" type="button">
+            <span class="visually hidden">Лайк</span>
+          </button>
+          <p class="fotoalbum__number">96</p>
+        </li>
+        <li class="fotoalbum__item">
+          <img src="/img/catalog/bridge-mobile.jpg" width="280" height="280" alt="Мост дьявола">
+          <h3 class="fotoalbum__title">Мост дьявола</h3>
+          <p class="fotoalbum__author">Автор фото: Антон</p>
+          <button class="fotoalbum__button button" type="button">
+            <span class="visually hidden">Лайк</span>
+          </button>
+          <p class="fotoalbum__number">254</p>
+        </li>
+      </ul>
+    </section>
+    <section class="video">
+      <h2 class="video__title">Все еще сомневаетесь?</h2>
+      <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+        раз!</p>
+      <img src="/img/catalog/video-mobile.jpg" width="280" height="177" alt="Видеопрезентация">
+    </section>
+  </main>
+  <!--Подвал-->
+  <footer>
+    <div class="footer hashtag">
+      <p class="hashtag__description">#visitSEDONA</p>
+    </div>
+    <div class="social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually hidden"> Мы в Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually hidden">Мы в Телеграме</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually hidden">Мы в Ютубе</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="html-academy">
+      <b class="copyright__description">Разработано:</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg aria-hidden="true" focusable="false" width="27" height="35" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
