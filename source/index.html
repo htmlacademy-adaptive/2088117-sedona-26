@@ -4,43 +4,44 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <!--Шапка-->
-  <header class="main-header">
-    <a class="main-header__logo">
+  <header class="header">
+    <a class="header__logo">
       <img src="/img/logo_sedona.svg" width="185" height="96" alt="Логотип Седоны">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+    <navigation class="nav">
+      <button class="nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-nav__list site-list">
+      <ul class="nav__list site-list">
         <li class="site-list__item site-list__item--current">
-          <a>Главная</a>
+          <a class="site-list__link">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html">Фото и видео</a>
+          <a  class="site-list__link" href="catalog.html">Фото и видео</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">Форма отзыва</a>
+          <a class="site-list__link" href="form.html">Форма отзыва</a>
         </li>
         <li class="site-list__item">
-          <a href="https://htmlacademy.ru">html Academy</a>
+          <a class="site-list__link" href="https://htmlacademy.ru">html Academy</a>
         </li>
       </ul>
-    </nav>
+    </navigation>
   </header>
   <!--Основное содержание-->
   <main class="main-container">
     <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>
     <header class="welcome">
-      <img src="/img/text-index.svg" width="282" height="214" alt="Добро пожаловать в Седону">
+      <img class="welcome__img" src="/img/text-index.svg" width="282" height="214" alt="Добро пожаловать в Седону">
     </header>
-    <section class="about-sedona">
-      <h2 class="about-sedona__title">СЕДОНА — небольшой городок в Аризорне, заслуживающий большего!</h2>
-      <p class="about-sedona__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    <section class="text-block about-sedona">
+      <h2 class="text-block__title">СЕДОНА — небольшой городок в Аризорне, заслуживающий большего!</h2>
+      <p class="text-block__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
     <section class="advantages">
       <h2 class="visually hidden"> Преимущества Седоны </h2>
