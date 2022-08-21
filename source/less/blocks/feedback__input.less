@@ -1,0 +1,48 @@
+@import "./fonts.less";
+@import "./mixins.less";
+@import "./color-variables.less";
+
+.feedback__input {
+  width: 280px;
+  margin-bottom: 16px;
+  background-color: @grey-input;
+  border: none;
+  padding: 16px;
+}
+
+.feedback__input--contacts {
+  box-sizing: border-box;
+  width: 222px;
+  margin-right: 0;
+}
+
+.feedback__input::placeholder {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: @black;
+  text-align: left;
+  line-height: 26px;
+}
+
+.feedback__input--contacts::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.feedback__input--contacts::-moz-placeholder,
+.feedback__input--text::-moz-placeholder {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.feedback__input--text {
+  .text-block__title();
+  border: none;
+  width: 279px;
+  min-height: 150px;
+  background-color: @grey-input;
+  padding: 16px;
+  box-sizing: border-box;
+  margin-bottom: 56px;
+  color: rgba(0, 0, 0, 0.3);
+}

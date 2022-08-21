@@ -1,0 +1,36 @@
+@import "./fonts.less";
+@import "./mixins.less";
+@import "./color-variables.less";
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.3);
+  z-index: 3;
+}
+
+.modal {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: auto;
+  background-color: @white;
+}
+
+.button-blue {
+  .button-blue();
+}
+
+.button-blue--error {
+  padding: 18px 63px 14px 64px;
+}
+
+.button-blue--success {
+  padding: 18px 61px 14px 61px;
+}

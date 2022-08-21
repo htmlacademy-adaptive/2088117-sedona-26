@@ -1,6 +1,10 @@
+@import "./fonts.less";
+@import "./mixins.less";
+@import "./color-variables.less";
+
 .welcome {
   background-image: url("/img/welcome-mobile.jpg");
-  background-color: #1c3d53;
+  background-color: darken(@blue, 30%);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;
@@ -8,7 +12,7 @@
 
 .welcome--catalog {
   background-image: url("/img/catalog/back-catalog-mobile.jpg");
-  background-color: #1c3d53;
+  background-color: darken(@blue, 30%);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;

@@ -1,5 +1,9 @@
+@import "./fonts.less";
+@import "./mixins.less";
+@import "./color-variables.less";
+
 .header {
-  background-color: #ffffff;
+  background-color: @white;
   display: flex;
   width: 320px;
 }
@@ -21,16 +25,10 @@
 
 .site-list {
   list-style-type: none;
-  background-color: #81B3D2;
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
+  background-color: @blue;
   margin: 0;
   padding: 0;
+  .text-block__title();
 }
 
 .site-list__item {
@@ -38,6 +36,6 @@
 }
 
 .site-list__link {
-  color: #ffffff;
+  color: @white;
   text-decoration: none;
 }
