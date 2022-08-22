@@ -1,6 +1,42 @@
-@import "./fonts.less";
-@import "./mixins.less";
-@import "./color-variables.less";
+.feedback__field {
+  margin: 0;
+  padding: 24px 20px 39px 20px;
+  border: none;
+}
+
+.feedback__button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: @grey-button;
+  margin: 0;
+  padding: 0;
+}
+
+.feedback__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feedback__choice {
+  margin-bottom: 16px;
+}
+
+.feedback__form-label {
+  .text-block__description();
+}
+
+.feedback__text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: right;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+}
 
 .feedback__input {
   width: 280px;
@@ -45,4 +81,11 @@
   box-sizing: border-box;
   margin-bottom: 56px;
   color: rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.feedback__button--blue {
+  width: 281px;
+  padding: 18px 33px 14px 33px;
+  margin-bottom: 0;
 }

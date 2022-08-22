@@ -1,20 +1,3 @@
-@import "./fonts.less";
-@import "./mixins.less";
-@import "./color-variables.less";
-
-.modal-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0, 0, 0, 0.3);
-  z-index: 3;
-}
-
 .modal {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -23,14 +6,23 @@
   background-color: @white;
 }
 
-.button-blue {
-  .button-blue();
+.modal__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 3;
 }
 
-.button-blue--error {
+.modal__button--error {
   padding: 18px 63px 14px 64px;
 }
 
-.button-blue--success {
+.modal__button--success {
   padding: 18px 61px 14px 61px;
 }
