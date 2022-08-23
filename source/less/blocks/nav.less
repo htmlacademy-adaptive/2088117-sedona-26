@@ -5,6 +5,25 @@
   width: 100%;
 }
 
+@media (min-width: @table-width) {
+  .nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @table-width) {
+  .nav__wrapper {
+    width: 1200px;
+  }
+}
+
 .nav__toggle {
   background-image: url("../images/icons/cross-mobile.svg");
+  background-size: 22px 22px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
