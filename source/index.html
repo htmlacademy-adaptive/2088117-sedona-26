@@ -4,30 +4,31 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <!--Шапка-->
-  <header class="main-header">
-    <a class="main-header__logo">
+  <header class="header">
+    <a class="header__logo">
       <img src="/img/logo_sedona.svg" width="185" height="96" alt="Логотип Седоны">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+    <nav class="nav">
+      <button class="nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-nav__list site-list">
+      <ul class="nav__list site-list">
         <li class="site-list__item site-list__item--current">
-          <a>Главная</a>
+          <a class="site-list__link">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html">Фото и видео</a>
+          <a class="site-list__link" href="catalog.html">Фото и видео</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">Форма отзыва</a>
+          <a class="site-list__link" href="form.html">Форма отзыва</a>
         </li>
         <li class="site-list__item">
-          <a href="https://htmlacademy.ru">html Academy</a>
+          <a class="site-list__link" href="https://htmlacademy.ru">html Academy</a>
         </li>
       </ul>
     </nav>
@@ -36,14 +37,14 @@
   <main class="main-container">
     <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>
     <header class="welcome">
-      <img src="/img/text-index.svg" width="282" height="214" alt="Добро пожаловать в Седону">
+      <img class="welcome__img" src="/img/text-index.svg" width="282" height="214" alt="Добро пожаловать в Седону">
     </header>
-    <section class="about-sedona">
-      <h2 class="about-sedona__title">СЕДОНА — небольшой городок в Аризорне, заслуживающий большего!</h2>
-      <p class="about-sedona__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    <section class="text-block about-sedona">
+      <h2 class="text-block__title">СЕДОНА — небольшой городок в Аризорне, заслуживающий большего!</h2>
+      <p class="text-block__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
     <section class="advantages">
-      <h2 class="visually hidden"> Преимущества Седоны </h2>
+      <h2 class="visually-hidden"> Преимущества Седоны </h2>
       <ol class="advantages__list">
 
         <li class="advantages__item advantages__item--blue-theme">
@@ -51,7 +52,7 @@
           <p class="advantages__description advantages__description--white-theme"> -№1-</p>
           <p class="advantages__description advantages__description--white-theme"> Седона - не аттракцион для туристов,
             там течет своя жизнь </p>
-          <img src="/img/photo-city@1x1.jpg" width="320" height="260" alt="Улицы Седоны">
+          <img class="advantages__img" src="/img/photo-city@1x1.jpg" width="320" height="260" alt="Улицы Седоны">
         </li>
         <li class="advantages__item advantages__item--icon">
           <h4 class="advantages__title advantages__title--icon">Жилье</h4>
@@ -73,11 +74,11 @@
             производства!</p>
         </li>
         <li class="advantages__item advantages__item--blue-theme">
-          <img src="/img/photo-bridge@1x1.jpg" width="320" height="260" alt="Мост Дьявола">
           <h3 class="advantages__title advantages__title--white-theme"> Там есть мост дьявола</h3>
           <p class="advantages__description advantages__description--white-theme"> -№2-</p>
           <p class="advantages__description advantages__description--white-theme">Да, по нему можно пройти! Если вы
             осмелитесь, разумеется </p>
+          <img class="advantages__img" src="/img/photo-bridge@1x1.jpg" width="320" height="260" alt="Мост Дьявола">
         </li>
         <li class="advantages__item">
           <h3 class="advantages__title">Небольшая площадь</h3>
@@ -99,42 +100,42 @@
     </section>
     <section class="find-hotel">
       <h2 class="find-hotel__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-      <p class="find-hotel__descriprion">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+      <p class="find-hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
         гостиниц
         в седоне</p>
       <button class="find-hotel__button button" type="button">Найти Гостиницу</button>
     </section>
     <section class="map">
-      <h2 class="visually hidden">Седона на карте </h2>
-      <img src="/img/map-mobile.jpg" width="320" height="350" alt="Карта">
+      <h2 class="visually-hidden">Седона на карте </h2>
+      <img class="map__image" src="/img/map-mobile.jpg" width="320" height="350" alt="Карта">
     </section>
   </main>
   <!--Подвал-->
-  <footer>
-    <div class="footer hashtag">
+  <footer class="footer">
+    <div class="hashtag">
       <p class="hashtag__description">#visitSEDONA</p>
     </div>
     <div class="social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-            <span class="visually hidden"> Мы в Вконтакте</span>
+            <span class="visually-hidden"> Мы в Вконтакте</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-            <span class="visually hidden">Мы в Телеграме</span>
+            <span class="visually-hidden">Мы в Телеграме</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually hidden">Мы в Ютубе</span>
+            <span class="visually-hidden">Мы в Ютубе</span>
           </a>
         </li>
       </ul>
     </div>
     <div class="html-academy">
-      <b class="copyright__description">Разработано:</b>
+      <b class="text-block__description">Разработано:</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg aria-hidden="true" focusable="false" width="27" height="35" xmlns="http://www.w3.org/2000/svg">
           <path
