@@ -6,6 +6,18 @@
   display: flex;
 }
 
+@media (min-width: @tablet-width) {
+  .welcome {
+    background-image: url("/img/welcome-tablet.jpg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+.welcome {
+  background-image: url("/img/welcome-desktop.jpg");
+}
+}
+
 .welcome--catalog {
   background-image: url("/img/catalog/back-catalog-mobile.jpg");
   background-color: darken(@blue, 30%);

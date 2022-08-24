@@ -8,6 +8,20 @@
   list-style-type: none;
 }
 
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(3, 256px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+  }
+}
+
 .advantages__item {
   padding: 24px 26px;
   background-color: @grey-advantages;

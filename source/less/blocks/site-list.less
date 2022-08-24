@@ -9,8 +9,20 @@
   display: none;
   }
 
+  @media (min-width: @tablet-width) {
+    .site-list {
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .site-list {
+      display: block;
+    }
+  }
+
 .site-list__item {
-  width: 100%;
+  width: 320px;
 }
 
 .site-list__link {

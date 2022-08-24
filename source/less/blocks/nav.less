@@ -5,25 +5,41 @@
   width: 100%;
 }
 
-@media (min-width: @table-width) {
+@media (min-width: @tablet-width) {
   .nav__wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 768px;
     margin: 0 auto;
   }
 }
 
-@media (min-width: @table-width) {
+@media (min-width: @desktop-width) {
   .nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 1200px;
+    margin: 0 auto;
   }
 }
 
 .nav__toggle {
-  background-image: url("../images/icons/cross-mobile.svg");
+  background-image: url("img/icons/menu-mobile.svg");
   background-size: 22px 22px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
+@media (min-width: @tablet-width) {
+.nav__toggle {
+  display: none;
+}
+}
+
+@media (min-width: @desktop-width) {
+  .nav__toggle {
+    display: none;
+  }
+  }
