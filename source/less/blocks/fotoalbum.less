@@ -4,8 +4,36 @@
   list-style-type: none;
 }
 
+@media (min-width: @tablet-width) {
+.fotoalbum__list {
+display: grid;
+grid-template-columns: repeat(2, 324px);
+}
+}
+
+@media (min-width: @desktop-width) {
+.fotoalbum__list {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  }
+}
+
 .fotoalbum__item {
   padding: 24px 20px 25px 20px;
+}
+
+@media (min-width: @tablet-width) {
+.fotoalbum__item {
+display: grid;
+grid-template-columns: 229px 95px;
+}
+}
+
+@media (min-width: @desktop-width) {
+.fotoalbum__item {
+  display: grid;
+  grid-template-columns: 229px 171px;
+}
 }
 
 .fotoalbum__img {
