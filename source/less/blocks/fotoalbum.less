@@ -5,16 +5,16 @@
 }
 
 @media (min-width: @tablet-width) {
-.fotoalbum__list {
-display: grid;
-grid-template-columns: repeat(2, 324px);
-}
+  .fotoalbum__list {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+  }
 }
 
 @media (min-width: @desktop-width) {
-.fotoalbum__list {
-  display: grid;
-  grid-template-columns: repeat(3, 400px);
+  .fotoalbum__list {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
   }
 }
 
@@ -23,17 +23,30 @@ grid-template-columns: repeat(2, 324px);
 }
 
 @media (min-width: @tablet-width) {
-.fotoalbum__item {
-display: grid;
-grid-template-columns: 229px 95px;
-}
+  .fotoalbum__item {
+    display: grid;
+    grid-template-columns: 229px 95px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-.fotoalbum__item {
-  display: grid;
-  grid-template-columns: 229px 171px;
+  .fotoalbum__item {
+    display: grid;
+    grid-template-columns: 229px 171px;
+  }
 }
+
+
+@media (min-width: @tablet-width) {
+  .fotoalbum__item--first {
+    grid-column: 1/-1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fotoalbum__item--first {
+    grid-column: 1/-1;
+  }
 }
 
 .fotoalbum__img {
