@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   .text-block__title();
-  z-index: 3;
+  z-index: 10;
   width: 100%;
 }
 
@@ -13,6 +13,8 @@
     display: block;
     display: flex;
     justify-content: space-between;
+    background-color: @white;
+    color: @black;
   }
 }
 
@@ -39,3 +41,29 @@
   color: @white;
   text-decoration: none;
 }
+
+@media (min-width: @tablet-width) {
+.site-list__link {
+  color: @black;
+  text-decoration: none;
+  .text-block__description();
+  font-weight: 700;
+}
+
+  .site-list__link--current {
+    color: @marron-link;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__link {
+    color: @black;
+    text-decoration: none;
+    .text-block__description();
+    font-weight: 700;
+  }
+
+  .site-list__link--current {
+    color: @marron-link;
+  }
+  }
