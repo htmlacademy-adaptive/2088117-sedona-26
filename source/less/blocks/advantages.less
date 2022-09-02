@@ -23,17 +23,26 @@
 }
 
 .advantages__item {
-  padding: 24px 26px;
   background-color: @grey-advantages;
+  padding: 26px 18px 24px 18px;
+}
+
+@media (min-width: @tablet-width) {
+.advantages__item {
+  background-color: @grey-advantages;
+  padding: 42px 33px 63px 34px;
+}
+}
+
+@media (min-width: @desktop-width) {
+.advantages__item {
+  background-color: @grey-advantages;
+  padding: 43px 42px 62px 43px;
+}
 }
 
 .advantages__item--blue-theme {
-  background-color: @blue;
   padding: 0;
-}
-
-.advantages__text {
-padding: 54px 19px 0px 19px;
 }
 
 @media (min-width: @tablet-width) {
@@ -67,6 +76,8 @@ padding: 54px 19px 0px 19px;
 }
 
 .advantages__img {
+  display: block;
+  padding: 0;
   object-fit: cover;
   height: 100%;
 }
@@ -84,8 +95,29 @@ padding: 54px 19px 0px 19px;
 }
 
 .advantages__item--icon {
-  padding: 22px 19px;
+  padding-left: 65px;
+  padding-right: 30px;
   background-color: @white;
+}
+
+@media (min-width: @tablet-width) {
+.advantages__item--icon {
+  padding: 60px 36px 59px 36px;
+  margin: 0;
+
+}
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__item--icon {
+    margin: 0;
+    padding: 59px 58px 79px 46px;
+  }
+  }
+
+.advantages__text {
+  background-color: @blue;
+padding: 39px 15px 35px 16px;
 }
 
 .advantages__title {
@@ -106,12 +138,14 @@ padding: 54px 19px 0px 19px;
 @media (min-width: @tablet-width) {
 .advantages__title--icon {
   margin-bottom: 32px;
+  text-align: center;
 }
 }
 
 @media (min-width: @desktop-width) {
 .advantages__title--icon {
   margin-bottom: 28px;
+  text-align: center;
 }
 }
 
@@ -135,6 +169,7 @@ padding: 54px 19px 0px 19px;
 .advantages__description:last-child {
   margin-bottom: 0;
 }
+
 .advantages__description--white-theme {
   color: @white;
 }
@@ -142,3 +177,18 @@ padding: 54px 19px 0px 19px;
 .advantages__description--icon {
   text-align: left;
 }
+
+@media (min-width: @tablet-width) {
+  .advantages__description--icon {
+    text-align: center;
+    padding-bottom: 0;
+  }
+  }
+
+@media (min-width: @desktop-width) {
+.advantages__description--icon {
+  text-align: center;
+  padding-bottom: 0;
+}
+}
+

@@ -1,7 +1,7 @@
 .nav {
+  position: relative;
   box-sizing: border-box;
   width: 320px;
-  min-height: 56px;
 }
 
 @media (min-width: @tablet-width) {
@@ -11,6 +11,7 @@
     justify-content: space-between;
     width: 768px;
     margin: 0 auto;
+    min-height: 56px;
   }
 }
 
@@ -21,6 +22,7 @@
     justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
+    min-height: 56px;
   }
 }
 
@@ -36,7 +38,6 @@
 .nav--closed .nav__img--opened {
   display: none;
 }
-
 
 .nav--closed .nav__toggle {
   position: absolute;
