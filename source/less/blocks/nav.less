@@ -37,25 +37,25 @@
     display: none;
   }
 
-.nav--closed .nav__img--opened {
-  display: none;
-}
+  .nav--closed .nav__img--opened {
+    display: none;
+  }
 
-.nav--closed .nav__toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-  display: block;
-  width: 56px;
-  height: 56px;
-  background-color: @white;
-  cursor: pointer;
-  border: none;
-}
+  .nav--closed .nav__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-color: @white;
+    cursor: pointer;
+    border: none;
+  }
 
-.nav--closed .nav__toggle .nav__img--closed {
-  display: block;
+  .nav--closed .nav__toggle .nav__img--closed {
+    display: block;
     fill: @blue;
     padding-left: 11px;
     padding-right: 19px;
@@ -78,7 +78,7 @@
     background-color: @blue;
   }
 
-  .nav--nojs .nav__toggle .nav__img--opened{
+  .nav--nojs .nav__toggle .nav__img--opened {
     display: block;
     fill: @white;
     padding-left: 11px;
@@ -97,36 +97,36 @@
 
   .nav--opened .nav__toggle {
     box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-  display: block;
-  width: 56px;
-  height: 56px;
-  background-color: @blue;
-  cursor: pointer;
-  border: none;
-}
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-color: @blue;
+    cursor: pointer;
+    border: none;
+  }
 
-.nav--opened .nav__img--closed {
-  display: none;
-}
+  .nav--opened .nav__img--closed {
+    display: none;
+  }
 
-.nav--opened .nav__toggle .nav__img--opened {
-  display: block;
-  fill: @white;
-  padding-left: 11px;
-  padding-right: 19px;
-}
+  .nav--opened .nav__toggle .nav__img--opened {
+    display: block;
+    fill: @white;
+    padding-left: 11px;
+    padding-right: 19px;
+  }
 
-.nav--opened .nav__toggle:hover .nav__img--opened {
-  fill: rgba(255, 255, 255, 0.6);
-}
+  .nav--opened .nav__toggle:hover .nav__img--opened {
+    fill: rgba(255, 255, 255, 0.6);
+  }
 
-.nav--opened .nav__toggle:active .nav__img--opened {
-  fill: rgba(255, 255, 255, 0.3);
-}
+  .nav--opened .nav__toggle:active .nav__img--opened {
+    fill: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -140,5 +140,3 @@
     display: none;
   }
 }
-
-
