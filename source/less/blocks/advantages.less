@@ -27,6 +27,38 @@
   padding: 26px 18px 24px 18px;
 }
 
+@media (max-width: @mobile-width-only) {
+  .advantages__first-line {
+    position: relative;
+  }
+
+  .advantages__first-line::after {
+    position: absolute;
+    right: 17px;
+    bottom: -24px;
+    left: 17px;
+    height: 1px;
+    background-color: @line;
+    content: "";
+    z-index: 2;
+  }
+
+  .advantages__second-line {
+    position: relative;
+  }
+
+  .advantages__second-line::after {
+    position: absolute;
+    right: 17px;
+    bottom: -24px;
+    left: 17px;
+    height: 1px;
+    background-color: @line;
+    content: "";
+    z-index: 2;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .advantages__item {
     background-color: @grey-advantages;
@@ -90,81 +122,89 @@
   background-color: @white;
 }
 
-@media (max-width: @mobile-width-only) {
-  .advantages__item--house {
-    background-image: url("/img/icons/house-mobile.svg");
-    background-repeat: no-repeat;
-    background-position: 23px 18px;
+@media (min-width: @tablet-width) {
+  .advantages__item--icon {
+    padding: 158px 36px 59px 36px;
+    margin: 0;
   }
+}
 
-  .advantages__item--food {
-    background-image: url("/img/icons/food-mobile.svg");
-    background-repeat: no-repeat;
-    background-position: 23px 18px;
-  }
 
-  .advantages__item--souvenir {
-    background-image: url("/img/icons/souvenir-mobile.svg");
-    background-repeat: no-repeat;
-    background-position: 23px 18px;
+@media (min-width: @desktop-width) {
+  .advantages__item--icon {
+    margin: 0;
+    padding: 158px 58px 79px 46px;
   }
+}
+
+.advantages__item--house {
+  background-image: url("../img/icons/house-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 23px 18px;
 }
 
 
 @media (min-width: @tablet-width) {
-  .advantages__item--icon {
-    padding: 60px 36px 59px 36px;
-    margin: 0;
-  }
-}
-/*
-@media (max-width: @tablet-width) {
   .advantages__item--house {
-    background-image: url("/img/icons/house-desktop.svg");
+    background-image: url("../img/icons/house-desktop.svg");
     background-repeat: no-repeat;
-    background-position: 60px 90px;
-  }
-
-  .advantages__item--food {
-    background-image: url("/img/icons/burger-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: 60px 90px;
-  }
-
-  .advantages__item--souvenir {
-    background-image: url("/img/icons/souvenir-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: 60px 90px;
+    background-position: 90px 60px;
   }
 }
-*/
+
+
 @media (min-width: @desktop-width) {
-  .advantages__item--icon {
-    margin: 0;
-    padding: 59px 58px 79px 46px;
-  }
-}
-/*
-@media (max-width: @desktop-width) {
   .advantages__item--house {
-    background-image: url("/img/icons/house-desktop.svg");
+    background-image: url("../img/icons/house-desktop.svg");
     background-repeat: no-repeat;
-    background-position: 59px 161px;
-  }
-
-  .advantages__item--food {
-    background-image: url("/img/icons/burger-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: 59px 161px;
-  }
-
-  .advantages__item--souvenir {
-    background-image: url("/img/icons/souvenir-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: 59px 161px;
+    background-position: 161px 59px;
   }
 }
-*/
+
+.advantages__item--food {
+  background-image: url("../img/icons/food-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 23px 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__item--food {
+    background-image: url("../img/icons/burger-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 90px 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__item--food {
+    background-image: url("../img/icons/burger-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 161px 59px;
+  }
+}
+
+.advantages__item--souvenir {
+  background-image: url("../img/icons/souvenir-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 23px 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__item--souvenir {
+    background-image: url("../img/icons/souvenir-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 90px 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__item--souvenir {
+    background-image: url("../img/icons/souvenir-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 161px 59px;
+  }
+}
+
 .advantages__text {
   background-color: @blue;
   padding: 39px 15px 35px 16px;

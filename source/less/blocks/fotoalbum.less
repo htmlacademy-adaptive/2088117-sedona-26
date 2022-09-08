@@ -25,12 +25,29 @@
   padding: 24px 20px 25px 20px;
 }
 
+@media (max-width: @mobile-width-only) {
+  .fotoalbum__item {
+    border-bottom: solid 1px @grey-button-hover;
+  }
+}
 
 @media (min-width: @tablet-width) {
   .fotoalbum__item {
     display: grid;
     grid-template-columns: 229px 95px;
     padding: 0;
+  }
+
+  .fotoalbum__item:nth-child(1) {
+    background-color: @grey-input;
+  }
+
+  .fotoalbum__item:nth-child(even) {
+    background-color: @grey-input;
+  }
+
+  .fotoalbum__item:nth-child(odd) {
+    background-color: @odd;
   }
 }
 
