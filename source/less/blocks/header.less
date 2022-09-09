@@ -1,10 +1,43 @@
 .header {
   background-color: @white;
   display: flex;
-  flex-direction: column;
+  position: relative;
+  min-height: 56px;
 }
 
+@media (min-width: @tablet-width) {
+  .header {
+    flex-direction: column;
+  }
+}
+
+
 .header__logo {
-  margin: 0 auto;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: @tablet-width) {
+  .header__logo {
+    order: 2;
+    align-self: center;
+    z-index: 11;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header__logo {
+    order: 2;
+    align-self: center;
+    z-index: 11;
+  }
+}
+
+.header__img {
+  display: block;
   height: 96px;
+  width: 185px;
 }

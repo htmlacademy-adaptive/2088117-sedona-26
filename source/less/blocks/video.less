@@ -1,13 +1,17 @@
 .video {
+  position: relative;
   box-sizing: border-box;
-  padding: 17px 20px 0px 20px;
+  padding: 0;
+  padding-top: 17px;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .video {
     width: 768px;
     box-sizing: border-box;
-    padding: 58px 60px 40px 60px;
+    padding: 30px 60px 40px 60px;
   }
 }
 
@@ -15,18 +19,91 @@
   .video {
     width: 1200px;
     box-sizing: border-box;
-    padding: 62px 200px 120px 200px;
+    padding: 62px 200px 84px 200px;
   }
 }
 
-.video__img {
+.video__container {
+  width: 280px;
   margin-top: 38px;
+  padding: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .video__container {
+    width: 648px;
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video__container {
+    width: 800px;
+    margin-top: 68px;
+  }
+}
+
+.video__button {
+  width: 48px;
+  height: 54px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("../img/icons/polygon-mobile.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 234px;
+  left: 144px;
+}
+
+@media (min-width: @tablet-width) {
+  .video__button {
+    top: 468px;
+    left: 360px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video__button {
+    top: 470px;
+    left: 575px;
+  }
+}
+
 
 .video__title {
   .text-block__title();
 }
 
+@media (min-width: @tablet-width) {
+  .video__title {
+    font-size: 30px;
+    margin-bottom: 33px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video__title {
+    font-size: 30px;
+    margin-bottom: 33px;
+  }
+}
+
 .video__description {
   .text-block__description();
+}
+
+
+@media (min-width: @tablet-width) {
+  .video__description {
+    padding-left: 101px;
+    padding-right: 102px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video__description {
+    padding-left: 178px;
+    padding-right: 177px;
+  }
 }

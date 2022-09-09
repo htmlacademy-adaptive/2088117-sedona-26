@@ -1,37 +1,70 @@
 .welcome {
-  background-image: url("/img/welcome-mobile.jpg");
+  width: 320px;
+  height: 389px;
+  background-image: url("../img/welcome-mobile.jpg");
   background-color: darken(@blue, 30%);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;
 }
 
+
 @media (min-width: @tablet-width) {
   .welcome {
-    background-image: url("/img/welcome-tablet.jpg");
+    position: relative;
+    width: 767px;
+    height: 518px;
+    background-image: url("../img/welcome-tablet.jpg");
+    background-color: darken(@blue, 30%);
+  }
+
+  .welcome::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: url("../img/triangle-tablet.svg");
+    padding: 0;
+    margin-bottom: -5px;
   }
 }
 
+
 @media (min-width: @desktop-width) {
   .welcome {
-    background-image: url("/img/welcome-desktop.jpg");
+    position: relative;
+    width: 1200px;
+    height: 518px;
+    background-image: url("../img/welcome-desktop.jpg");
+    background-color: darken(@blue, 30%);
+  }
+
+  .welcome::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: url("../img/triangle-desktop.svg");
+    padding: 0;
+    margin-bottom: -6px;
   }
 }
 
 .welcome--catalog {
   width: 320px;
-  background-image: url("/img/catalog/back-catalog-mobile.jpg");
+  height: 160px;
+  background-image: url("../img/catalog/back-catalog-mobile.jpg");
   background-color: darken(@blue, 30%);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;
 }
 
+
 @media (min-width: @tablet-width) {
   .welcome--catalog {
+    position: relative;
     width: 768px;
-    width: 320px;
-    background-image: url("/img/catalog/back-catalog-tablet.jpg");
+    height: 290px;
+    background-image: url("../img/catalog/back-catalog-tablet.jpg");
     background-color: darken(@blue, 30%);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -41,21 +74,46 @@
 
 @media (min-width: @desktop-width) {
   .welcome--catalog {
-    width: 320px;
-    background-image: url("/img/catalog/back-catalog-desktop.jpg");
+    width: 1200px;
+    height: 301px;
+    background-image: url("../img/catalog/back-catalog-desktop.jpg");
     background-color: darken(@blue, 30%);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
   }
 }
-
 
 
 .welcome__img {
   margin: 90px 19px 85px 19px;
 }
 
+@media (min-width: @tablet-width) {
+  .welcome__img {
+    margin: 77px 153px 91px 154px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .welcome__img {
+    margin: 78px 370px 90px 370px;
+  }
+}
+
 .welcome__img--catalog {
   margin: 50px 45px 67px 45px;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome__img--catalog {
+    margin: 95px 157px 117px 159px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome__img--catalog {
+    margin: 101px 369px 120px 371px;
+  }
 }

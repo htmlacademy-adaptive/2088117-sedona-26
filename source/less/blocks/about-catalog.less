@@ -3,11 +3,28 @@
   padding: 37px 20px 25px 20px;
 }
 
+@media (max-width: @mobile-width-only) {
+  .about-catalog {
+    position: relative;
+    border-bottom: solid 1px @grey-button-hover;
+  }
+
+  .about-catalog::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: url("../img/triangle-mobile.svg");
+    padding: 0;
+    margin-top: -56px;
+    width: 321px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .about-catalog {
     width: 768px;
     box-sizing: border-box;
-    padding: 66px 155px;
+    padding: 66px 155px 30px 155px;
   }
 }
 
@@ -15,12 +32,28 @@
   .about-catalog {
     width: 1200px;
     box-sizing: border-box;
-    padding: 100px 371px 65px 371px;
+    padding: 104px 371px 69px 371px;
   }
 }
 
 .about-catalog__title {
   .text-block__title ();
+  margin-bottom: 32px;
+  font-size: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .about-catalog__title {
+    .text-block__title ();
+    font-size: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-catalog__title {
+    .text-block__title ();
+    font-size: 30px;
+  }
 }
 
 .about-catalog__description {
