@@ -15,7 +15,7 @@
       <!--Шапка-->
       <header class="header">
         <a class="header__logo">
-          <img class="header__img" src="/img/logo_sedona.svg" width="185" height="96" alt="Логотип Седоны">
+          <img class="header__img" src="img/logo_sedona.svg" width="185" height="96" alt="Логотип Седоны">
         </a>
         <nav class="nav nav--closed nav--nojs">
           <div class="nav__wrapper">
@@ -52,7 +52,7 @@
       <main class="main-container">
         <h1 class="visually-hidden">Формы</h1>
         <header class="welcome welcome--catalog">
-          <img class="welcome__img welcome__img--catalog" src="/img/catalog/sedona.svg" width="229" height="39"
+          <img class="welcome__img welcome__img--catalog" src="img/catalog/sedona.svg" width="229" height="39"
             alt="Седона">
         </header>
         <section class="about-form">
@@ -102,9 +102,9 @@
                 </button>
               </fieldset>
             </div>
-            <div class="feedback__wrapper--line">
+            <div class="feedback__wrapper feedback__wrapper--line">
               <fieldset class="feedback__field feedback__field--choose">
-                <legend class="feedback__title">ВАше Общее впечатление:</legend>
+                <legend class="feedback__title feedback__title--line">ВАше Общее впечатление:</legend>
                 <ul class="feedback__list feedback__list--opinion">
                   <li class="feedback__item feedback__item--choice">
                     <label class="feedback__form-label feedback__control feedback__control--circle">
@@ -133,9 +133,9 @@
                 </ul>
               </fieldset>
             </div>
-            <div class="feedback__wrapper--line">
+            <div class="feedback__wrapper feedback__wrapper--line">
               <fieldset class="feedback__field  feedback__field--choose">
-                <legend class="feedback__title">посещенные достопримечательности:</legend>
+                <legend class="feedback__title feedback__title--line">посещенные достопримечательности:</legend>
                 <ul class="feedback__list feedback__list--sites">
                   <li class="feedback__item feedback__item--choice">
                     <label class="feedback__form-label feedback__control">
@@ -167,15 +167,19 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="feedback__field feedback__field--textarea">
-                <legend class="feedback__title">Опишите свои эмоции:</legend>
+            </div>
+            <div class="feedback__wrapper">
+              <fieldset class="feedback__field feedback__field--textarea feedback__field--choose">
+                <legend class="feedback__title feedback__title--line">Опишите свои эмоции:</legend>
 
                 <textarea class="feedback__textarea" name="text"
                   id="text">Опишите подробно все свои восторги </textarea>
                 <button class="button feedback__button--blue" type="submit">ОТПРАВИТЬ ОТЗЫВ </button>
                 <p class="feedback__text">* — обязательные поля</p>
+
               </fieldset>
             </div>
+
           </form>
         </section>
       </main>
