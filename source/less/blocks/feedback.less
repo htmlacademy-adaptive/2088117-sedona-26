@@ -36,7 +36,6 @@
 @media (min-width: @tablet-width) {
   .feedback__wrapper--line {
     grid-column: 1/-1;
-
   }
 }
 
@@ -46,7 +45,6 @@
     grid-column: 1/-1;
   }
 }
-
 
 
 .feedback__field {
@@ -517,7 +515,7 @@
   background-color: rgba(51, 51, 51, 0.3);
 }
 
-.feedback__choice[type="checkbox"]:checked+.feedback__mark::after {
+.feedback__choice[type="checkbox"]:checked + .feedback__mark::after {
   position: absolute;
   top: 15px;
   left: 12px;
@@ -527,7 +525,7 @@
   content: "";
 }
 
-.feedback__choice[type="radio"]:checked+.feedback__mark--circle::before {
+.feedback__choice[type="radio"]:checked + .feedback__mark--circle::before {
   position: absolute;
   top: 15px;
   left: 15px;
