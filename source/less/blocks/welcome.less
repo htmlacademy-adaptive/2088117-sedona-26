@@ -8,19 +8,29 @@
   display: flex;
 }
 
+@media (min-resolution: 2dppx) {
+  background-image: url("../img/welcome-mobile@2x.jpg");
+  background-size: 320px auto;
+}
+
 
 @media (min-width: @tablet-width) {
   .welcome {
     position: relative;
-    width: 767px;
+    width: 768px;
     height: 518px;
     background-image: url("../img/welcome-tablet.jpg");
     background-color: darken(@blue, 30%);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/welcome-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   .welcome::after {
     position: absolute;
-    right: 0;
+    right: -1px;
     bottom: 0;
     content: url("../img/triangle-tablet.svg");
     padding: 0;
@@ -36,11 +46,17 @@
     height: 518px;
     background-image: url("../img/welcome-desktop.jpg");
     background-color: darken(@blue, 30%);
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/welcome-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .welcome::after {
     position: absolute;
-    right: 0;
+    right: -1px;
     bottom: 0;
     content: url("../img/triangle-desktop.svg");
     padding: 0;
@@ -58,6 +74,11 @@
   display: flex;
 }
 
+@media (min-resolution: 2dppx) {
+  background-image: url("../img/catalog/back-catalog-mobile@2x.jpg");
+  background-size: 320px auto;
+}
+
 
 @media (min-width: @tablet-width) {
   .welcome--catalog {
@@ -69,6 +90,11 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog/back-catalog-tablet@2x.jpg");
+    background-size: 768px auto;
   }
 }
 
@@ -82,15 +108,23 @@
     background-repeat: no-repeat;
     display: flex;
   }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog/back-catalog-desktop@2x.jpg");
+    background-size: 1200px auto;
+  }
 }
 
 
 .welcome__img {
+  width: 282px;
   margin: 90px 19px 85px 19px;
 }
 
 @media (min-width: @tablet-width) {
   .welcome__img {
+    width: 461px;
+    height: 350px;
     margin: 77px 153px 91px 154px;
   }
 }
@@ -98,22 +132,30 @@
 
 @media (min-width: @desktop-width) {
   .welcome__img {
+    width: 460px;
+    height: 350px;
     margin: 78px 370px 90px 370px;
   }
 }
 
 .welcome__img--catalog {
+  width: 229px;
+  height: 39px;
   margin: 50px 45px 67px 45px;
 }
 
 @media (min-width: @tablet-width) {
   .welcome__img--catalog {
+    width: 457px;
+    height: 78px;
     margin: 95px 157px 117px 159px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .welcome__img--catalog {
+    width: 460px;
+    height: 80px;
     margin: 101px 369px 120px 371px;
   }
 }

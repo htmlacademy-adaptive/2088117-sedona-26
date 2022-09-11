@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="img/favicons/favicon-svg.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -51,7 +55,11 @@
     <main class="main-container">
       <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>
       <header class="welcome">
-        <img class="welcome__img" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в Седону">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/text-index-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/text-index-desktop.svg">
+          <img class="welcome__img" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в Седону">
+        </picture>
       </header>
       <section class="text-block about-sedona">
         <h2 class="text-block__title">СЕДОНА — небольшой городок в Аризорне, заслуживающий большего!</h2>
@@ -69,7 +77,13 @@
                 туристов,
                 там течет своя жизнь </p>
             </div>
-            <img class="advantages__img" src="img/photo-city@1x1.jpg" width="320" height="260" alt="Улицы Седоны">
+
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/city-desktop.jpg 1x, img/city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/city-tablet.jpg 1x, img/city-tablet@2x.jpg 2x">
+              <img class="advantages__img" src="img/city.jpg" width="320" height="260" srcset="img/city@2x.jpg 2x"
+                alt="Улицы Седоны">
+            </picture>
           </li>
           <li class="advantages__item advantages__item--icon advantages__item--house">
             <h4 class="advantages__title advantages__title--icon">Жилье</h4>
@@ -100,8 +114,12 @@
                 вы
                 осмелитесь, разумеется </p>
             </div>
-            <img class="advantages__img advantages__img--bridge" src="img/photo-bridge@1x1.jpg" width="320" height="260"
-              alt="Мост Дьявола">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/bridge-desktop.jpg 1x, img/bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/bridge-tablet.jpg 1x, img/bridge-tablet@2x.jpg 2x">
+              <img class="advantages__img advantages__img--bridge" src="img/bridge.jpg" width="320" height="260"
+                srcset="img/bridge@2x.jpg 2x" alt="Мост Дьявола">
+            </picture>
           </li>
           <li class="advantages__item">
             <div class="advantages__first-line">
