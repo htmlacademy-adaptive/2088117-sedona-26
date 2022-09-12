@@ -6,6 +6,15 @@
   flex-wrap: wrap;
 }
 
+
+@media (min-width: @desktop-width) {
+.social__list {
+  margin: 0;
+  padding: 0;
+  min-width: 156px;
+}
+}
+
 .social__button {
   box-sizing: border-box;
   display: flex;
@@ -41,6 +50,6 @@
   margin-right: 6px;
 }
 
-.social__button:nth-child(3) {
+.social__item:nth-child(3) {
   margin-right: 0;
 }
