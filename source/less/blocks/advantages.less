@@ -62,7 +62,7 @@
 @media (min-width: @tablet-width) {
   .advantages__item {
     background-color: @grey-advantages;
-    padding: 42px 33px 63px 34px;
+    padding: 40px 40px 42px 40px;
   }
 }
 
@@ -170,6 +170,7 @@
     background-image: url("../img/icons/house-desktop.svg");
     background-repeat: no-repeat;
     background-position: 90px 60px;
+    padding: 159px 38px 59px 38px;
   }
 }
 
@@ -200,7 +201,8 @@
   .advantages__item--food {
     background-image: url("../img/icons/burger-desktop.svg");
     background-repeat: no-repeat;
-    background-position: 90px 60px;
+    background-position: 90px 62px;
+    padding: 157px 36px 59px 36px;
   }
 }
 
@@ -232,8 +234,9 @@ br {
   .advantages__item--souvenir {
     background-image: url("../img/icons/souvenir-desktop.svg");
     background-repeat: no-repeat;
-    background-position: 90px 60px;
-  }
+    background-position: 93px 58px;
+    padding: 158px 30px 59px 30px;
+    }
 }
 
 @media (min-width: @desktop-width) {
@@ -257,6 +260,16 @@ br {
    }
 }
 
+@media (min-width: @tablet-width) {
+  .advantages__title {
+   font-size: 21px;
+    margin-bottom: 14px;
+   br {
+    display: block;
+   }
+  }
+  }
+
 @media (min-width: @desktop-width) {
 .advantages__title {
  font-size: 21px;
@@ -270,13 +283,24 @@ br {
 .advantages__title--white-theme {
   color: @white;
   margin-bottom: 12px;
-
   br {
     display: none;
   }
 }
 
-/*7 модуль начало*/
+@media (min-width: @tablet-width) {
+  .advantages__title--white-theme {
+    font-size: 21px;
+    margin-bottom: 14px;
+
+    br {
+      display: block;
+    }
+  }
+  }
+
+
+
 @media (min-width: @desktop-width) {
   .advantages__title--white-theme {
     font-size: 21px;
@@ -287,7 +311,7 @@ br {
     }
   }
   }
-/*7 модуль конец*/
+
 
 .advantages__title--icon {
   text-align: left;
@@ -296,7 +320,8 @@ br {
 
 @media (min-width: @tablet-width) {
   .advantages__title--icon {
-    margin-bottom: 32px;
+    font-size: 21px;
+    margin-bottom: 23px;
     text-align: center;
   }
 }
@@ -320,12 +345,15 @@ br {
 @media (min-width: @tablet-width) {
   .advantages__description {
     margin-bottom: 22px;
+    br {
+      display: block;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .advantages__description {
-    margin-bottom: 24px; /*7 задание*/
+    margin-bottom: 24px;
     br {
       display: block;
     }
@@ -369,6 +397,21 @@ br {
   }
 }
 
+@media (min-width: @tablet-width) {
+.advantages__description--souvenir {
+br{
+  display: none;
+}
+}
+}
+
+@media (min-width: @tablet-width) {
+.advantages__description--road {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+}
+
 .advantages__text--bridge {
   padding: 40px 33px 35px 29px;
 
@@ -379,6 +422,7 @@ br {
 
 @media (min-width: @tablet-width) {
   .advantages__text--bridge {
+    padding: 40px 44px 44px 44px;
     order: 2;
   }
 }
