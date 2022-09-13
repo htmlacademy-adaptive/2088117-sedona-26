@@ -22,12 +22,22 @@
 
 .fotoalbum__item {
   box-sizing: border-box;
-  padding: 24px 20px 25px 20px;
+  padding: 12px 20px 12px 20px;
 }
 
 @media (max-width: @mobile-width-only) {
   .fotoalbum__item {
-    border-bottom: solid 1px @grey-button-hover;
+    position: relative;
+  }
+
+  .fotoalbum__item::after {
+    position: absolute;
+    right: 0;
+    bottom: -12px;
+    width: 320px;
+    height: 1px;
+    background-color: @grey-button-hover;
+    content: "";
   }
 }
 
@@ -78,7 +88,7 @@
 
 .fotoalbum__img {
   margin-top: 24px;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
   object-fit: cover;
   height: 100%;
 }
@@ -90,6 +100,7 @@
     grid-column: 1/-1;
     padding: 0;
     margin: 0;
+    margin-bottom: 15px;
   }
 }
 
@@ -102,7 +113,7 @@
     grid-column: 1/-1;
     padding: 0;
     margin: 0;
-    margin-bottom: -80px;
+    margin-bottom: -81px;
   }
 }
 
@@ -128,6 +139,7 @@
   font-size: 14px;
   text-align: left;
   margin: 0;
+
 }
 
 @media (min-width: @desktop-width) {
@@ -140,7 +152,7 @@
   .text-block__description();
   text-transform: none;
   text-align: left;
-  margin-bottom: 17px;
+  margin-bottom: 13px;
 }
 
 @media (min-width: @tablet-width) {
@@ -168,7 +180,7 @@
   .fotoalbum__text-wrapper {
     box-sizing: border-box;
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 21px;
     height: 80px;
   }
 }
@@ -180,7 +192,7 @@
 @media (min-width: @tablet-width) {
   .fotoalbum__number-wrapper {
     justify-content: flex-end;
-    padding-top: 8px;
+    padding-top: 10px;
     padding-right: 20px;
     text-align: right;
   }
@@ -189,7 +201,7 @@
 @media (min-width: @desktop-width) {
   .fotoalbum__number-wrapper {
     justify-content: flex-end;
-    padding-top: 28px;
+    padding-top: 31px;
     padding-right: 20px;
     text-align: right;
   }
@@ -199,8 +211,18 @@
   background-color: transparent;
   width: 23px;
   height: 21px;
-  margin-right: 14px;
+  margin-right: 19px;
+  margin-left: -5px;
+  margin-top: -5px;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+.fotoalbum__button {
+margin: 0;
+margin-right: 16px;
+margin-top: -1px;
+}
 }
 
 .fotoalbum__like {
