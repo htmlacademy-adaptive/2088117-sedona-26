@@ -53,6 +53,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  width: 280px;
 }
 
 .feedback__wrapper {
@@ -62,10 +63,10 @@
   margin: 0;
 }
 
-@media (max-width: @mobile-width-only) {
-  .feedback__wrapper {
-    border-bottom: solid 1px @grey-button-hover;
-  }
+
+.feedback__wrapper--left {
+padding-top: 8px;
+margin-bottom: 2px;
 }
 
 @media (min-width: @tablet-width) {
@@ -128,6 +129,10 @@
   }
 }
 
+.feedback__field--choose {
+  margin-top: -20px;
+  margin-bottom: -11px;
+}
 
 @media (min-width: @tablet-width) {
   .feedback__field--choose {
@@ -256,6 +261,7 @@
 
 .feedback__form-label {
   .text-block__description();
+  text-indent: 17px;
 }
 
 @media (min-width: @tablet-width) {
@@ -276,8 +282,26 @@
   margin-bottom: 20px;
   margin-top: 24px;
   display: block;
+ padding-right: 10px;
 }
 
+
+@media (max-width: @mobile-width-only) {
+  .feedback__title {
+    width: 280px;
+position: relative;
+  }
+
+  .feedback__title::after {
+    position: absolute;
+    left: -20px;
+    top: -25px;
+    width: 320px;
+    height: 1px;
+    background-color: @grey-button-hover;
+    content: "";
+  }
+}
 @media (min-width: @tablet-width) {
   .feedback__title {
     font-size: 21px;
@@ -327,6 +351,7 @@
   background-color: @grey-input;
   border: none;
   padding: 16px;
+  padding-top: 21px;
 }
 
 @media (min-width: @desktop-width) {
@@ -395,6 +420,9 @@
   opacity: 0.3;
 }
 
+.feedback__field--textarea {
+margin-bottom: -13px;
+}
 
 @media (min-width: @tablet-width) {
   .feedback__field--textarea {
@@ -419,9 +447,9 @@
   width: 279px;
   min-height: 150px;
   background-color: @grey-input;
-  padding: 16px;
+  padding: 17px;
   box-sizing: border-box;
-  margin-bottom: 56px;
+  margin-bottom: 58px;
   color: rgba(0, 0, 0, 0.3);
   text-align: left;
   text-transform: none;
@@ -444,8 +472,8 @@
 
 .feedback__button--blue {
   width: 281px;
-  padding: 18px 33px 14px 33px;
-  margin-bottom: 0;
+  padding: 16px 36px 14px 33px;
+  margin-bottom: 3px;
 }
 
 
@@ -468,7 +496,7 @@
 .feedback__control {
   position: relative;
   display: block;
-  padding-left: 39px;
+  padding-left: 29px;
   margin-bottom: 16px;
 }
 
@@ -517,8 +545,8 @@
 
 .feedback__choice[type="checkbox"]:checked + .feedback__mark::after {
   position: absolute;
-  top: 15px;
-  left: 12px;
+  top: 14px;
+  left: 11px;
   width: 22px;
   height: 16px;
   background-image: url("../img/icons/tick.svg");
@@ -527,7 +555,7 @@
 
 .feedback__choice[type="radio"]:checked + .feedback__mark--circle::before {
   position: absolute;
-  top: 15px;
+  top: 13px;
   left: 15px;
   width: 16px;
   height: 16px;
