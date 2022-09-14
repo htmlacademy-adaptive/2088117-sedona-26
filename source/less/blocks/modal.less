@@ -1,6 +1,7 @@
 .modal {
   position: relative;
-  -webkit-box-sizing: border-box; /* stylelint-disable-line */
+  -webkit-box-sizing: border-box;
+  /* stylelint-disable-line */
   box-sizing: border-box;
   margin: auto;
   background-color: @white;
@@ -29,6 +30,19 @@
   flex-direction: column;
 }
 
+@media (min-width: @tablet-width) {
+  .modal-content--error {
+    padding: 49px 47px 49px 46px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal-content--error {
+    padding: 44px 47px 47px 46px;
+  }
+}
+
+
 .modal--success {
   width: 320px;
 }
@@ -54,13 +68,28 @@
   flex-direction: column;
 }
 
+@media (min-width: @tablet-width) {
+  .modal-content--success {
+    padding-top: 52px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal-content--success {
+    padding-top: 52px;
+  }
+}
+
 .modal__container {
   position: fixed;
   top: 0;
   left: 0;
-  display: -webkit-box; /* stylelint-disable-line */
-  display: -ms-flexbox; /* stylelint-disable-line */
-  display: flex; /* stylelint-disable-line */
+  display: -webkit-box;
+  /* stylelint-disable-line */
+  display: -ms-flexbox;
+  /* stylelint-disable-line */
+  display: flex;
+  /* stylelint-disable-line */
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
@@ -70,14 +99,14 @@
 .modal__button--error {
   width: 180px;
   padding: 18px 63px 14px 64px;
-margin: 0 auto;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
   .modal__button--error {
     width: 272px;
     padding: 18px 107px 14px 107px;
-    margin: 30px 64px 49px 64px;
+    margin: 0 auto;
   }
 }
 
@@ -85,7 +114,7 @@ margin: 0 auto;
   .modal__button--error {
     width: 272px;
     padding: 18px 107px 14px 107px;
-    margin: 30px 64px 49px 64px;
+    margin: 0 auto;
   }
 }
 
@@ -100,7 +129,8 @@ margin: 0 auto;
 @media (min-width: @tablet-width) {
   .modal__button--success {
     width: 458px;
-    padding: 18px 139px 14px 140px;
+    padding: 18px 145px 14px 148px;
+    font-size: 21px;
   }
 }
 
@@ -109,6 +139,7 @@ margin: 0 auto;
   .modal__button--success {
     width: 458px;
     padding: 18px 139px 14px 140px;
+    font-size: 21px;
   }
 }
 
@@ -122,7 +153,7 @@ margin: 0 auto;
   .modal__title--error {
     font-size: 30px;
     line-height: 40px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     padding-left: 49px;
     padding-right: 49px;
   }
@@ -132,7 +163,7 @@ margin: 0 auto;
   .modal__title--error {
     font-size: 30px;
     line-height: 40px;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
     padding-left: 49px;
     padding-right: 49px;
   }
@@ -142,7 +173,7 @@ margin: 0 auto;
 @media (min-width: @tablet-width) {
   .modal__title--success {
     font-size: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -151,7 +182,7 @@ margin: 0 auto;
 @media (min-width: @desktop-width) {
   .modal__title--success {
     font-size: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -162,41 +193,46 @@ margin: 0 auto;
 }
 
 .modal__text-wrapper--error {
-margin-bottom: 28px;
+  margin-bottom: 28px;
 }
 
 @media (min-width: @tablet-width) {
   .modal__text-wrapper--error {
-    padding: 38px 46px 33px 47px;
+    margin-bottom: 48px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .modal__text-wrapper--error {
-    padding: 38px 46px 33px 47px;
+    margin-bottom: 46px;
   }
 }
 
 .modal__text-wrapper--success {
-margin-bottom: 50px;
-padding-left: 37px;
-padding-right: 39px;
-br {
-  display: block;
-}
+  margin-bottom: 50px;
+  padding-left: 37px;
+  padding-right: 39px;
 
+  br {
+    display: block;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .modal__text-wrapper--success {
-    padding: 52px 97px 57px 99px;
+    padding: 0;
+    padding-right: 97px;
+    padding-left: 99px;
   }
 }
 
 
 @media (min-width: @desktop-width) {
   .modal__text-wrapper--success {
-    padding: 52px 97px 57px 99px;
+    padding: 0;
+    padding-right: 97px;
+    padding-left: 99px;
+    margin-bottom: 52px;
   }
 }
 
@@ -210,7 +246,15 @@ br {
 @media (min-width: @tablet-width) {
   .modal__button-wrapper {
     box-sizing: border-box;
-    padding: 44px 91px;
+    padding: 43px 91px;
+    background-color: @grey-input;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal__button-wrapper {
+    box-sizing: border-box;
+    padding: 43px 91px;
     background-color: @grey-input;
   }
 }

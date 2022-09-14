@@ -27,7 +27,8 @@
                 <use xlink:href="img/sprite.svg#icon-closed"></use>
               </svg>
               <svg class="nav__img--opened" width="22" height="22">
-                <use xlink:href="img/sprite.svg#icon-opened"></use> </svg>
+                <use xlink:href="img/sprite.svg#icon-opened"></use>
+              </svg>
               <span class="visually-hidden">Открыть меню</span>
             </button>
             <ul class="nav__list site-list">
@@ -81,7 +82,7 @@
               </fieldset>
             </div>
             <div class="feedback__wrapper feedback__wrapper--left">
-              <fieldset class="feedback__field">
+              <fieldset class="feedback__field feedback__field--left">
                 <legend class="feedback__title">Контактная информация:</legend>
                 <label class="feedback__form-label feedback__form-label--contacts" for="number">Контактный
                   телефон*:</label>
@@ -169,14 +170,15 @@
             </div>
             <div class="feedback__wrapper feedback__wrapper--line">
               <fieldset class="feedback__field feedback__field--textarea feedback__field--choose">
-                <legend class="feedback__title feedback__title--line">Опишите свои эмоции:</legend>
+                <legend class="feedback__title feedback__title--line feedback__title--textarea">Опишите свои эмоции:
+                </legend>
 
                 <textarea class="feedback__textarea" name="text"
                   id="text">Опишите подробно все свои восторги </textarea>
-                  <div class="feedback__button-wrapper">
-                <button class="button feedback__button--blue" type="submit">ОТПРАВИТЬ ОТЗЫВ </button>
-                <p class="feedback__text">* — обязательные поля</p>
-</div>
+                <div class="feedback__button-wrapper">
+                  <button class="button feedback__button--blue" type="submit">ОТПРАВИТЬ ОТЗЫВ </button>
+                  <p class="feedback__text">* — обязательные поля</p>
+                </div>
               </fieldset>
             </div>
 
@@ -204,7 +206,7 @@
 
               <a class="button social__button" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Мы в Телеграме</span>
-                <svg class="social__img"  width="24" height="24">
+                <svg class="social__img" width="24" height="24">
                   <use xlink:href="img/sprite.svg#icon-tg"></use>
                 </svg>
               </a>
@@ -215,7 +217,8 @@
               <a class="button social__button" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Мы в Ютубе</span>
                 <svg class="social__img" width="24" height="24">
-                  <use xlink:href="img/sprite.svg#icon-yt"></use> </svg>
+                  <use xlink:href="img/sprite.svg#icon-yt"></use>
+                </svg>
               </a>
 
             </li>
@@ -224,9 +227,10 @@
         <div class="html-academy">
           <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive">
             Разработано
-              <svg class="html-academy__img" width="27" height="35">
-                <use xlink:href="img/sprite.svg#icon-html"></use></svg>
-            </a>
+            <svg class="html-academy__img" width="27" height="35">
+              <use xlink:href="img/sprite.svg#icon-html"></use>
+            </svg>
+          </a>
         </div>
       </footer>
     </div>

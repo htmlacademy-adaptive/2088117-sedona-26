@@ -13,7 +13,8 @@
   .site-list {
     z-index: 2;
   }
-/*Седьмое задание начало*/
+
+  /*Седьмое задание начало*/
   .site-list::after {
     content: "";
     position: absolute;
@@ -23,14 +24,16 @@
     height: 7px;
     box-shadow: inset 0 -4px 4px 0 fade(@black, 25%);
   }
-/*Седьмое задание конец*/
+
+  /*Седьмое задание конец*/
 }
 
 
 @media (min-width: @tablet-width) {
   .site-list {
     display: block;
-    display: flex; /* stylelint-disable-line */
+    display: flex;
+    /* stylelint-disable-line */
     justify-content: space-between;
     background-color: @white;
     color: @black;
