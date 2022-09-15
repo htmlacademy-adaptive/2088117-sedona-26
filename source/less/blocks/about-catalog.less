@@ -1,13 +1,23 @@
 .about-catalog {
   box-sizing: border-box;
-  padding: 37px 20px 25px 20px;
+  padding: 36px 20px 25px 20px;
 }
 
 @media (max-width: @mobile-width-only) {
   .about-catalog {
     position: relative;
-    border-bottom: solid 1px @grey-button-hover;
   }
+
+  .about-catalog::before {
+    position: absolute;
+    right: 0;
+    bottom: -12px;
+    width: 320px;
+    height: 1px;
+    background-color: @grey-button-hover;
+    content: "";
+  }
+
 
   .about-catalog::after {
     position: absolute;
@@ -15,7 +25,7 @@
     top: 0;
     content: url("../img/triangle-mobile.svg");
     padding: 0;
-    margin-top: -57px;
+    margin-top: -56px;
     width: 321px;
   }
 }
@@ -24,7 +34,7 @@
   .about-catalog {
     width: 768px;
     box-sizing: border-box;
-    padding: 66px 155px 30px 155px;
+    padding: 66px 155px 48px 155px;
   }
 }
 
@@ -32,13 +42,13 @@
   .about-catalog {
     width: 1200px;
     box-sizing: border-box;
-    padding: 104px 371px 69px 371px;
+    padding: 99px 371px 87px 371px;
   }
 }
 
 .about-catalog__title {
   .text-block__title ();
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   font-size: 18px;
 }
 
@@ -46,16 +56,29 @@
   .about-catalog__title {
     .text-block__title ();
     font-size: 30px;
+    margin-bottom: 31px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .about-catalog__title {
-    .text-block__title ();
     font-size: 30px;
+    margin-bottom: 31px;
   }
 }
 
 .about-catalog__description {
   .text-block__description ();
+
+  br {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .about-catalog__description {
+    br {
+      display: block;
+    }
+  }
 }

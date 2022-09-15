@@ -2,7 +2,7 @@
   position: relative;
   width: 320px;
   box-sizing: border-box;
-  padding: 32px 19px 53px 19px;
+  padding: 34px 26px 39px 19px;
 }
 
 @media (max-width: @mobile-width-only) {
@@ -21,7 +21,7 @@
     top: 0;
     content: url("../img/triangle-mobile.svg");
     padding: 0;
-    margin-top: -57px;
+    margin-top: -56px;
   }
 }
 
@@ -41,11 +41,40 @@
   }
 }
 
-.text-block__title {
+.about-sedona__title {
   .text-block__title ();
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 35px;
+
+  br {
+    display: block;
+  }
 }
+
+@media (min-width: @tablet-width) {
+  .about-sedona__title {
+    font-size: 21px;
+    text-indent: -1px;
+    margin-bottom: 30px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-sedona__title {
+    font-size: 21px;
+    text-indent: -1px;
+    margin-bottom: 30px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
 
 .text-block__description {
   .text-block__description ();

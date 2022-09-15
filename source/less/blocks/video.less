@@ -1,17 +1,14 @@
 .video {
   position: relative;
   box-sizing: border-box;
-  padding: 0;
-  padding-top: 17px;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  padding: 29px 20px 0 20px;
 }
 
 @media (min-width: @tablet-width) {
   .video {
     width: 768px;
     box-sizing: border-box;
-    padding: 30px 60px 40px 60px;
+    padding: 25px 60px 45px 60px;
   }
 }
 
@@ -19,12 +16,13 @@
   .video {
     width: 1200px;
     box-sizing: border-box;
-    padding: 62px 200px 84px 200px;
+    padding: 62px 200px 78px 200px;
   }
 }
 
 .video__container {
   width: 280px;
+  margin: 0;
   margin-top: 38px;
   padding: 0;
 }
@@ -32,14 +30,17 @@
 @media (min-width: @tablet-width) {
   .video__container {
     width: 648px;
-    margin-top: 70px;
+    min-height: 500px;
+    margin-top: 90px;
+    object-fit: cover;
   }
 }
 
 @media (min-width: @desktop-width) {
   .video__container {
+    box-sizing: border-box;
     width: 800px;
-    margin-top: 68px;
+    margin-top: 83px;
   }
 }
 
@@ -52,20 +53,20 @@
   background-image: url("../img/icons/polygon-mobile.svg");
   background-repeat: no-repeat;
   position: absolute;
-  top: 234px;
+  top: 246px;
   left: 144px;
 }
 
 @media (min-width: @tablet-width) {
   .video__button {
-    top: 380px;
+    top: 438px;
     left: 360px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .video__button {
-    top: 470px;
+    top: 473px;
     left: 575px;
   }
 }
@@ -73,6 +74,7 @@
 
 .video__title {
   .text-block__title();
+  margin-bottom: 27px;
 }
 
 @media (min-width: @tablet-width) {
@@ -91,6 +93,8 @@
 
 .video__description {
   .text-block__description();
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 
