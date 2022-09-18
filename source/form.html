@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+  <link rel="preload" href="img/catalog/back-catalog-mobile@2x.jpg" as="image">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="icon" href="img/favicons/favicon-svg.svg" type="image/svg+xml">
@@ -44,7 +46,7 @@
               class="welcome__img welcome__img--catalog" src="img/sedona-catalog.svg" width="229" height="39"
               alt="Седона">
           </picture>
-          </header>
+        </header>
         <section class="about-form">
           <h2 class="about-form__title">Оставьте свой отзыв</h2>
           <p class="about-form__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
@@ -125,8 +127,9 @@
             <div class="feedback__wrapper feedback__wrapper--line">
               <fieldset class="feedback__field feedback__field--textarea feedback__field--choose">
                 <legend class="feedback__title feedback__title--line feedback__title--textarea">Опишите свои эмоции:
-                </legend><textarea class="feedback__textarea" name="text"
-                  id="text">Опишите подробно все свои восторги </textarea>
+                </legend>
+                <label class="visually-hidden" for="text">Форма для комментариев</label><textarea
+                  class="feedback__textarea" name="text" id="text">Опишите подробно все свои восторги </textarea>
                 <div class="feedback__button-wrapper"><button class="button feedback__button--blue"
                     type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
                   <p class="feedback__text">* — обязательные поля</p>
@@ -160,8 +163,7 @@
         </div>
         <div class="html-academy"><a class="html-academy__link"
             href="https://htmlacademy.ru/intensive/adaptive">Разработано
-            <svg class="html-academy__img" width="27"
-              height="35">
+            <svg class="html-academy__img" width="27" height="35">
               <use xlink:href="img/sprite.svg#icon-html"></use>
             </svg></a></div>
       </footer>
