@@ -86,6 +86,11 @@
             <li class="fotoalbum__item">
               <div class="fotoalbum__picture-wrapper">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/catalog/flora-desktop.webp, img/catalog/flora-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/flora-tablet.webp, img/catalog/flora-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/flora-mobile.webp, img/catalog/flora-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
                     srcset="img/catalog/flora-desktop.jpg, img/catalog/flora-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -110,6 +115,11 @@
             <li class="fotoalbum__item">
               <div class="fotoalbum__picture-wrapper">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/catalog/road-desktop.webp, img/catalog/road-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/road-tablet.webp, img/catalog/road-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/road-mobile.webp, img/catalog/road-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
                     srcset="img/catalog/road-desktop.jpg, img/catalog/road-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -134,6 +144,12 @@
             <li class="fotoalbum__item">
               <div class="fotoalbum__picture-wrapper">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/catalog/bridge-desktop.webp, img/catalog/bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/bridge-tablet.webp, img/catalog/bridge-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/catalog/bridge-mobile.webp, img/catalog/bridge-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
                     srcset="img/catalog/bridge-desktop.jpg, img/catalog/bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -161,7 +177,7 @@
           <h2 class="video__title">Все еще сомневаетесь?</h2>
           <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
             очередной раз!</p>
-          <div class="video__player"><button class="video__button"></button><video class="video__container" width="280"
+          <div class="video__player"><button class="video__button" aria-label="Проиграть видео"></button><video class="video__container" width="280"
               poster="img/catalog/video-mobile.jpg"></video></div>
         </section>
       </main>
