@@ -23,8 +23,6 @@
     height: 7px;
     box-shadow: inset 0 -4px 4px 0 fade(@black, 25%);
   }
-
-  /*Седьмое задание конец*/
 }
 
 
@@ -32,11 +30,13 @@
   .site-list {
     display: block;
     display: flex; /* stylelint-disable-line */
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: @white;
     color: @black;
     margin: 0;
     width: 768px;
+    position: relative;
   }
 }
 
@@ -44,6 +44,7 @@
   .site-list {
     box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0;
     width: 1200px;

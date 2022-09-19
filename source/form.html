@@ -18,13 +18,13 @@
   <div class="page__container">
     <div class="page__shadow">
       <!--Шапка-->
-      <header class="header"><a class="header__logo"><img class="header__img" src="img/logo_sedona.svg" width="185"
-            height="96" alt="Логотип Седоны"></a>
+      <header class="header"><a class="header__logo" href="index.html"><img class="header__img"
+            src="img/logo_sedona.svg" width="185" height="96" alt="Логотип Седоны"></a>
         <nav class="nav nav--closed nav--nojs">
-          <div class="nav__wrapper"><button class="nav__toggle" type="button"><svg class="nav__img--closed" width="23"
-                height="22">
+          <div class="nav__wrapper"><button class="nav__toggle" type="button"><svg class="nav__img nav__img--closed"
+                width="23" height="22">
                 <use xlink:href="img/sprite.svg#icon-closed"></use>
-              </svg> <svg class="nav__img--opened" width="22" height="22">
+              </svg> <svg class="nav__img nav__img--opened" width="22" height="22">
                 <use xlink:href="img/sprite.svg#icon-opened"></use>
               </svg> <span class="visually-hidden">Открыть меню</span></button>
             <ul class="nav__list site-list">
@@ -121,8 +121,10 @@
                       class="feedback__form-label feedback__control"><input class="visually-hidden feedback__choice"
                         type="checkbox" name="red rocks"> <span class="feedback__mark"></span> <span
                         class="feedback__control-label">Красные скалы</span></label></li>
+
                 </ul>
               </fieldset>
+
             </div>
             <div class="feedback__wrapper feedback__wrapper--line">
               <fieldset class="feedback__field feedback__field--textarea feedback__field--choose">
@@ -130,7 +132,7 @@
                 </legend>
                 <label class="visually-hidden" for="text">Форма для комментариев</label><textarea
                   class="feedback__textarea" name="text" id="text">Опишите подробно все свои восторги </textarea>
-                <div class="feedback__button-wrapper"><button class="button feedback__button--blue"
+                <div class="feedback__button-wrapper"><button class="button feedback__button feedback__button--blue"
                     type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
                   <p class="feedback__text">* — обязательные поля</p>
                 </div>
@@ -150,8 +152,9 @@
                   class="social__img" width="24" height="24">
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg> <span class="visually-hidden">Мы в Вконтакте</span></a></li>
-            <li class="social__item"><a class="button social__button" href="https://t.me/htmlacademy"><span
-                  class="visually-hidden">Мы в Телеграме</span> <svg class="social__img" width="24" height="24">
+            <li class="social__item"><a class="button social__button social__button--tg"
+                href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span> <svg
+                  class="social__img social__img--tg" width="24" height="24">
                   <use xlink:href="img/sprite.svg#icon-tg"></use>
                 </svg></a></li>
             <li class="social__item"><a class="button social__button"
@@ -159,6 +162,7 @@
                   class="social__img" width="24" height="24">
                   <use xlink:href="img/sprite.svg#icon-yt"></use>
                 </svg></a></li>
+
           </ul>
         </div>
         <div class="html-academy"><a class="html-academy__link"
@@ -170,35 +174,35 @@
     </div>
   </div>
   <script src="js/script.js"></script>
-</body>
 
-</html>
-<!--Модальные окна
-<div class="modal modal__container">
+  <!--Модальное окно ошибки
+<div class="modal modal--container">
       <div class="modal modal--error">
-              <section class="modal__content modal-content--error">
+              <section class="modal__content modal__content--error">
                 <div class="modal__text-wrapper modal__text-wrapper--error">
                 <h2 class="modal__title modal__title--error">Что-то пошло не так!</h2>
                 <p class="modal__description modal__description-error"> Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
               </div>
-                <button class="button modal__button--error" type="submit">ОK</button>
+                <button class="button modal__button modal__button--error" type="submit">ОK</button>
               </section>
             </div>
             </div>
-
-            <div class="modal modal__container">
+-->
+  <!--Модальное окно успешной операции
+            <div class="modal modal--container">
               <div class="modal modal--success">
-                      <section class="modal__content modal-content--success">
+                      <section class="modal__content modal__content--success">
                       <div class="modal__text-wrapper modal__text-wrapper--success">
                         <h2 class="modal__title modal__title--success">Ваш отзыв отправлен!</h2>
                         <p class="modal__description modal__description-success"> Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
-
                         </div>
                         <div class="modal__button-wrapper">
-                        <button class="button modal__button--success" type="submit">Закрыть окно</button>
+                        <button class="button  modal__button modal__button--success" type="submit">Закрыть окно</button>
                      </div>
-
                       </section>
                     </div>
                     </div>
-    -->
+-->
+</body>
+
+</html>

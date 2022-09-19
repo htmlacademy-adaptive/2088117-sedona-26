@@ -18,13 +18,13 @@
   <div class="page__container">
     <div class="page__shadow">
       <!--Шапка-->
-      <header class="header"><a class="header__logo"><img class="header__img" src="img/logo_sedona.svg" width="185"
-            height="96" alt="Логотип Седоны"></a>
+      <header class="header"><a class="header__logo" href="index.html"><img class="header__img"
+            src="img/logo_sedona.svg" width="185" height="96" alt="Логотип Седоны"></a>
         <nav class="nav nav--closed nav--nojs">
-          <div class="nav__wrapper"><button class="nav__toggle" type="button"><svg class="nav__img--closed" width="23"
-                height="22">
+          <div class="nav__wrapper"><button class="nav__toggle" type="button"><svg class="nav__img nav__img--closed"
+                width="23" height="22">
                 <use xlink:href="img/sprite.svg#icon-closed"></use>
-              </svg> <svg class="nav__img--opened" width="22" height="22">
+              </svg> <svg class="nav__img nav__img--opened" width="22" height="22">
                 <use xlink:href="img/sprite.svg#icon-opened"></use>
               </svg> <span class="visually-hidden">Открыть меню</span></button>
             <ul class="nav__list site-list">
@@ -38,7 +38,7 @@
       </header>
       <!--Основное содержание-->
       <main class="main-container">
-        <h1 class="visually-hidden">Фото и видео</h1>
+        <h1 class="visually-hidden">Каталог</h1>
         <header class="welcome welcome--catalog">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/sedona-catalog-desktop.svg">
@@ -180,7 +180,7 @@
           <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
             очередной раз!</p>
           <div class="video__player"><button class="video__button" aria-label="Проиграть видео"></button><video
-              class="video__container" width="280" poster="img/catalog/video-mobile.jpg"></video></div>
+              class="video__container"></video></div>
         </section>
       </main>
       <!--Подвал-->
@@ -194,8 +194,9 @@
                   class="social__img" width="24" height="24">
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg> <span class="visually-hidden">Мы в Вконтакте</span></a></li>
-            <li class="social__item"><a class="button social__button" href="https://t.me/htmlacademy"><span
-                  class="visually-hidden">Мы в Телеграме</span> <svg class="social__img" width="24" height="24">
+            <li class="social__item"><a class="button social__button social__button--tg"
+                href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span> <svg
+                  class="social__img social__img--tg" width="24" height="24">
                   <use xlink:href="img/sprite.svg#icon-tg"></use>
                 </svg></a></li>
             <li class="social__item"><a class="button social__button"
