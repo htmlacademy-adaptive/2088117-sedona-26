@@ -93,17 +93,19 @@
                         class="visually-hidden feedback__choice" type="radio" name="feedback" value="mostly negative"
                         checked="checked"> <span class="feedback__mark feedback__mark--circle"></span> <span
                         class="feedback__control-label">Скорее отрицательное</span></label></li>
-                  <li class="feedback__item feedback__item--choice"><label
-                      class="feedback__form-label feedback__control feedback__control--circle"><input
+                  <li class="feedback__item feedback__item--choice">
+                    <label class="feedback__form-label feedback__control feedback__control--circle"><input
                         class="visually-hidden feedback__choice" type="radio" name="feedback" value="hard to say"
                         checked="checked"> <span class="feedback__mark feedback__mark--circle"></span> <span
-                        class="feedback__control-label">Затрудняюсь ответить</span></label></li>
+                        class="feedback__control-label">Затрудняюсь ответить</span></label>
+                  </li>
                 </ul>
               </fieldset>
             </div>
             <div class="feedback__wrapper feedback__wrapper--line">
               <fieldset class="feedback__field feedback__field--choose">
-                <legend class="feedback__title feedback__title--sites">посещенные<br>достопримечательности:</legend>
+                <legend class="feedback__title feedback__title--sites">посещенные<br>&nbsp;достопримечательности:
+                </legend>
                 <ul class="feedback__list feedback__list--sites">
                   <li class="feedback__item feedback__item--choice"><label
                       class="feedback__form-label feedback__control"><input class="visually-hidden feedback__choice"
@@ -121,10 +123,8 @@
                       class="feedback__form-label feedback__control"><input class="visually-hidden feedback__choice"
                         type="checkbox" name="red rocks"> <span class="feedback__mark"></span> <span
                         class="feedback__control-label">Красные скалы</span></label></li>
-
                 </ul>
               </fieldset>
-
             </div>
             <div class="feedback__wrapper feedback__wrapper--line">
               <fieldset class="feedback__field feedback__field--textarea feedback__field--choose">
@@ -162,7 +162,6 @@
                   class="social__img" width="24" height="24">
                   <use xlink:href="img/sprite.svg#icon-yt"></use>
                 </svg></a></li>
-
           </ul>
         </div>
         <div class="html-academy"><a class="html-academy__link"
@@ -173,36 +172,33 @@
       </footer>
     </div>
   </div>
+  <div class="modal__container modal__container--closed">
+    <div class="modal modal--error">
+      <section class="modal__content modal__content--error">
+        <div class="modal__text-wrapper modal__text-wrapper--error">
+          <h2 class="modal__title modal__title--error">Что-то пошло не так!</h2>
+          <p class="modal__description modal__description-error"> Проверьте поля, выделенные красным, скорее всего вы
+            забыли их заполнить</p>
+        </div>
+        <button class="button modal__button modal__button--error" type="submit">ОK</button>
+      </section>
+    </div>
+  </div>
+  <div class="modal__container modal__container--closed">
+    <div class="modal modal--success">
+      <section class="modal__content modal__content--success">
+        <div class="modal__text-wrapper modal__text-wrapper--success">
+          <h2 class="modal__title modal__title--success">Ваш отзыв отправлен!</h2>
+          <p class="modal__description modal__description-success"> Спасибо за ваше участие, ваш отзыв уже поступил к
+            нам.<br>&nbsp;В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <div class="modal__button-wrapper">
+          <button class="button  modal__button modal__button--success" type="submit">Закрыть окно</button>
+        </div>
+      </section>
+    </div>
+  </div>
   <script src="js/script.js"></script>
-
-  <!--Модальное окно ошибки
-<div class="modal modal--container">
-      <div class="modal modal--error">
-              <section class="modal__content modal__content--error">
-                <div class="modal__text-wrapper modal__text-wrapper--error">
-                <h2 class="modal__title modal__title--error">Что-то пошло не так!</h2>
-                <p class="modal__description modal__description-error"> Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-              </div>
-                <button class="button modal__button modal__button--error" type="submit">ОK</button>
-              </section>
-            </div>
-            </div>
--->
-  <!--Модальное окно успешной операции
-            <div class="modal modal--container">
-              <div class="modal modal--success">
-                      <section class="modal__content modal__content--success">
-                      <div class="modal__text-wrapper modal__text-wrapper--success">
-                        <h2 class="modal__title modal__title--success">Ваш отзыв отправлен!</h2>
-                        <p class="modal__description modal__description-success"> Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
-                        </div>
-                        <div class="modal__button-wrapper">
-                        <button class="button  modal__button modal__button--success" type="submit">Закрыть окно</button>
-                     </div>
-                      </section>
-                    </div>
-                    </div>
--->
 </body>
 
 </html>

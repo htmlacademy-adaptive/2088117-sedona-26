@@ -52,23 +52,22 @@
     border: none;
   }
 
-  .nav--closed .nav__toggle .nav__img--closed {
+  .nav--closed .nav__img--closed {
     display: block;
     fill: @blue;
     padding-left: 7px;
     padding-right: 19px;
   }
 
-  .nav--closed .nav__toggle:hover .nav__img--closed {
+  .nav__toggle:hover .nav__img--closed {
     fill: rgba(129, 179, 210, 0.6);
   }
 
-  .nav--closed .nav__toggle:active .nav__img--closed {
+  .nav__toggle:active .nav__img--closed {
     fill: rgba(129, 179, 210, 0.3);
   }
 
-  .nav--nojs .nav__toggle .nav__img--closed,
-  .nav--nojs .nav__toggle .nav__img--opened {
+  .nav--nojs .nav__toggle {
     display: none;
   }
 
@@ -107,18 +106,18 @@
     display: none;
   }
 
-  .nav--opened .nav__toggle .nav__img--opened {
+  .nav--opened .nav__img--opened {
     display: block;
     fill: @white;
     padding-left: 11px;
     padding-right: 19px;
   }
 
-  .nav--opened .nav__toggle:hover .nav__img--opened {
+  .nav__toggle:hover .nav__img--opened {
     fill: rgba(255, 255, 255, 0.6);
   }
 
-  .nav--opened .nav__toggle:active .nav__img--opened {
+  .nav__toggle:active .nav__img--opened {
     fill: rgba(255, 255, 255, 0.3);
   }
 }
