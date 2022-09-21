@@ -212,6 +212,7 @@
   .feedback__list--opinion {
     display: grid;
     grid-template-columns: repeat(3, 280px);
+    grid-row: auto;
     grid-gap: 28px;
     padding: 0 53px 88px 53px;
   }
@@ -301,6 +302,9 @@
     grid: 1/-1;
     box-sizing: border-box;
     position: relative;
+    white-space: pre-wrap;
+    padding-left: 127px;
+    padding-right: 126px;
   }
 
   .feedback__title--line::after {
@@ -332,8 +336,10 @@
     width: 960px;
     box-sizing: border-box;
     position: relative;
-    text-indent: -32px;
     margin-bottom: 45px;
+    padding-left: 280px;
+    padding-right: 280px;
+
   }
 
   .feedback__title--line::after {
@@ -366,6 +372,9 @@
     box-sizing: border-box;
     position: relative;
     text-indent: 5px;
+    white-space: pre-wrap;
+    padding-left: 127px;
+    padding-right: 126px;
   }
 
   .feedback__title--sites::after {
@@ -400,6 +409,8 @@
     text-indent: 2px;
     padding-left: 7px;
     margin-bottom: 60px;
+    padding-left: 280px;
+    padding-right: 280px;
   }
 
   .feedback__title--sites::after {
@@ -453,6 +464,14 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .feedback__title--textarea {
+white-space: pre-wrap;
+padding-left: 127px;
+padding-right: 126px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .feedback__title--textarea {
     text-indent: 4px;
@@ -460,6 +479,8 @@
     margin-bottom: 27px;
     padding: 0;
     position: relative;
+    padding-left: 280px;
+    padding-right: 280px;
   }
 
   .feedback__title--textarea::after {
@@ -713,7 +734,7 @@
 
 .feedback__choice[type="radio"]:checked + .feedback__mark--circle::before {
   position: absolute;
-  top: 13px;
+  top: 15px;
   left: 15px;
   width: 16px;
   height: 16px;
@@ -725,12 +746,16 @@
 
 .feedback__control-label {
   .text-block__title();
+  position: relative;
   display: block;
+  box-sizing: border-box;
   text-align: left;
   text-transform: none;
-  padding-left: 16px;
   padding-top: 10px;
+  padding-left: 16px;
 }
+
+
 
 .feedback__control-label:last-child {
   margin-bottom: 0;
@@ -739,6 +764,4 @@
 
 .feedback__item--choice {
   margin-bottom: 16px;
-  width: 280px;
-  height: 46px;
 }
